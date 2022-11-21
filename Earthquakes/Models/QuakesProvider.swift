@@ -1,5 +1,5 @@
 //
-//  QuakeProvider.swift
+//  QuakesProvider.swift
 //  Earthquakes-iOS
 //
 //  Created by Ryan Henderson on 11/21/22.
@@ -8,6 +8,7 @@
 
 import Foundation
 
+@MainActor
 class QuakesProvider: ObservableObject {
     
     @Published var quakes: [Quake] = []
